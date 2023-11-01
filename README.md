@@ -1,4 +1,4 @@
-# Food API
+# Bite API
 
 This is a simple Express.js-based API for managing and retrieving information about food items. It provides various endpoints for accessing food data, including listing all food items, getting details about a specific food item, retrieving random food items, and more.
 
