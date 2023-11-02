@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "vercel-build": "npm run build"
+    "vercel-build": "node index.js"
   },
   "keywords": [],
   "author": "",
