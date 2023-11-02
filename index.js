@@ -16,6 +16,11 @@ app.use((req, res, next) => {
 
 
 app.use('/food', foodRoute);
+// add welcome page route
+app.get('/', (req, res) => {
+  // add intruction to use API
+  res.send('Welcome to the Food API! Use endpoints to filter food data.');
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on PORT ${PORT}`);
