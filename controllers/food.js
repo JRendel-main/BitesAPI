@@ -118,6 +118,28 @@ export const findIngredients = (req, res) => {
     }
 };
 
+export const getImage = (req, res) => {
+    // get the id from the request
+    const id = req.params.id;
+
+    // get the food item from the json
+    const foodItem = food.find((food) => food.id === id);
+
+    if (foodItem === undefined) {
+        res.send({ error: 'No meal found' });
+    } else {
+        // find the "Image Name" from the food item
+        const imageName = foodItem['Image_Name'];
+        
+        const imagePath = `Food Images/Food Images/${imageName}.jpg`;
+
+        // send the image to client
+        res.sendFile(imagePath, { root: './' });
+
+        console.log('Warning! Someone is accessing your food image!');
+    }
+}
+
 
 
 export default router;
