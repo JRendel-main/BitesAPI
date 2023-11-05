@@ -31,6 +31,7 @@ The API provides the following endpoints:
 - `GET /food/get/random=:count`: Get random food items. Replace `:count` with the number of random items you want.
 - `GET /food/get/count`: Get the total count of food items in the dataset.
 - `GET /food/find/ingredients=:ingredients`: Find the food item with the most matched ingredients. Replace `:ingredients` with a comma-separated list of ingredients.
+- `GET /food/get/image/:id` : Find the food images API.
 
 ## Usage
 
